@@ -4,17 +4,7 @@ const Schema = mongoose.Schema
 
 const carSchema = new Schema(
   {
-    make: {
-      type: String,
-    },
-
-    model: {
-      type: String,
-    },
-
-    price: {
-      type: Number
-    }
+//exercise 
 
   },
 )

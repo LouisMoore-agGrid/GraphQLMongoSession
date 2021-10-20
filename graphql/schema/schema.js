@@ -10,8 +10,7 @@ type Car {
 }
 
 type rowsAndLastIndex {
-    rows: [Car]!,
-    lastRow: Int
+//exercise
 }
 
 type Query {

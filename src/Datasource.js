@@ -10,7 +10,6 @@ class ServerSideDatasource {
     }
 
         getRows(params){
-            console.log()
             let startRow = params.request.startRow
             let endRow = params.request.endRow
             this.client
@@ -24,10 +23,7 @@ class ServerSideDatasource {
                       startRow: $startRow
                       endRow: $endRow
                   ){
-                      
-                          rows{make model price}
-                          lastRow
-                      
+                    //exercise
                   }
                 }`,
                 variables: {
@@ -41,7 +37,6 @@ class ServerSideDatasource {
                     params.success({ rowData: rows, lastRow: lastRow });
                   })
                   .catch((err) => {
-                      console.log(err)
                     console.log(JSON.stringify(err, null, 2));
                     params.fail();
                   })
